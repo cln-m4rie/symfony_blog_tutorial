@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BlogController!{% endblock %}
+{% block body %}
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button type="submit" class="btn btn-primary">作成</button>
+    {{ form_end(form) }}
+    <p><a href="{{ path('blog_index') }}">一覧に戻る</a></p>
+{% endblock %}
